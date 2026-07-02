@@ -274,3 +274,123 @@ document.querySelector(".comment-box textarea").value="";
 };
 
 }
+
+/*=========================================
+        FEATURED PRODUCTS
+=========================================*/
+
+const products = [
+{
+    id:1,
+    name:"Luxury Flower Box",
+    price:"Rs. 4,500",
+    rating:"★★★★★",
+    discount:"-10%",
+    image:"assets/products/product1.jpg"
+},
+{
+    id:2,
+    name:"Birthday Surprise Box",
+    price:"Rs. 5,900",
+    rating:"★★★★☆",
+    discount:"-15%",
+    image:"assets/products/product2.jpg"
+},
+{
+    id:3,
+    name:"Romantic Rose Box",
+    price:"Rs. 6,200",
+    rating:"★★★★★",
+    discount:"-20%",
+    image:"assets/products/product3.jpg"
+},
+{
+    id:4,
+    name:"Wedding Collection",
+    price:"Rs. 7,500",
+    rating:"★★★★★",
+    discount:"-12%",
+    image:"assets/products/product4.jpg"
+},
+{
+    id:5,
+    name:"Kids Celebration Box",
+    price:"Rs. 3,800",
+    rating:"★★★★☆",
+    discount:"-8%",
+    image:"assets/products/product5.jpg"
+},
+{
+    id:6,
+    name:"Premium Chocolate Box",
+    price:"Rs. 4,900",
+    rating:"★★★★★",
+    discount:"-18%",
+    image:"assets/products/product6.jpg"
+},
+{
+    id:7,
+    name:"Luxury Teddy Box",
+    price:"Rs. 5,500",
+    rating:"★★★★★",
+    discount:"-10%",
+    image:"assets/products/product7.jpg"
+},
+{
+    id:8,
+    name:"Custom Premium Box",
+    price:"Rs. 6,900",
+    rating:"★★★★★",
+    discount:"-25%",
+    image:"assets/products/product8.jpg"
+}
+];
+
+const productGrid = document.getElementById("productGrid");
+
+function loadProducts(){
+
+    let html = "";
+
+    products.forEach(product=>{
+
+        html += `
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img src="${product.image}" alt="${product.name}">
+
+                <span class="discount">${product.discount}</span>
+
+                <button class="wishlist-btn">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">${product.name}</h3>
+
+                <div class="price">${product.price}</div>
+
+                <div class="rating">${product.rating}</div>
+
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+        `;
+
+    });
+
+    productGrid.innerHTML = html;
+
+}
+
+loadProducts();
