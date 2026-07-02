@@ -394,3 +394,18 @@ function loadProducts(){
 }
 
 loadProducts();
+
+/*=========================================
+    NEW ARRIVALS & BEST SELLING
+=========================================*/
+
+const newArrivals = document.getElementById("newArrivals");
+const bestSelling = document.getElementById("bestSelling");
+
+if(newArrivals){
+    newArrivals.innerHTML = productGrid.innerHTML;
+}
+
+if(bestSelling){
+    bestSelling.innerHTML = productGrid.innerHTML;
+}
