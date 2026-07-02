@@ -1100,3 +1100,16 @@ footer{
 }
 
 }
+/*=========================================
+    NEW ARRIVALS & BEST SELLING
+=========================================*/
+
+.new-arrivals,
+.best-selling{
+    padding:70px 8%;
+    background:#fff;
+}
+
+.best-selling{
+    background:#f8f6ff;
+}
