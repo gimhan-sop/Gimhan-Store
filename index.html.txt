@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gimhan Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="top-bar">
+
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+
+            <div class="store-name">
+                <h2>Gimhan Store</h2>
+                <p>Gift Items & Toys</p>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search Products...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
+
+    </div>
+</header>
+
+<!-- Slider -->
+<section class="slider">
+    <div class="slides">
+        <img src="assets/banner1.jpg" alt="Banner 1">
+        <img src="assets/banner2.jpg" alt="Banner 2">
+        <img src="assets/banner1.jpg" alt="Banner 3">
+    </div>
+</section>
+
+<!-- Products -->
+<section class="products">
+    <h2>Latest Products</h2>
+
+    <div class="product-grid">
+
+        <a href="product.html" class="product-link">
+            <div class="product-card">
+                <img src="assets/products/product1.jpg" alt="Teddy Bear">
+                <div class="product-info">
+                    <h3>Teddy Bear</h3>
+                    <div class="rating">★★★★★ <span>(125)</span></div>
+                    <p class="price">
+                        Rs.2,500
+                        <span class="old-price">Rs.3,100</span>
+                    </p>
+                    <span class="discount">20% OFF</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="product.html" class="product-link">
+            <div class="product-card">
+                <img src="assets/products/product2.jpg" alt="Gift Box">
+                <div class="product-info">
+                    <h3>Gift Box</h3>
+                    <div class="rating">★★★★★ <span>(54)</span></div>
+                    <p class="price">
+                        Rs.3,200
+                        <span class="old-price">Rs.3,800</span>
+                    </p>
+                    <span class="discount">15% OFF</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="product.html" class="product-link">
+            <div class="product-card">
+                <img src="assets/products/product3.jpg" alt="Toy Car">
+                <div class="product-info">
+                    <h3>Toy Car</h3>
+                    <div class="rating">★★★★☆ <span>(38)</span></div>
+                    <p class="price">
+                        Rs.1,950
+                        <span class="old-price">Rs.2,200</span>
+                    </p>
+                    <span class="discount">10% OFF</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="product.html" class="product-link">
+            <div class="product-card">
+                <img src="assets/products/product4.jpg" alt="Baby Doll">
+                <div class="product-info">
+                    <h3>Baby Doll</h3>
+                    <div class="rating">★★★★★ <span>(89)</span></div>
+                    <p class="price">
+                        Rs.2,850
+                        <span class="old-price">Rs.3,600</span>
+                    </p>
+                    <span class="discount">25% OFF</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="product.html" class="product-link">
+            <div class="product-card">
+                <img src="assets/products/product5.jpg" alt="Flower Gift">
+                <div class="product-info">
+                    <h3>Flower Gift</h3>
+                    <div class="rating">★★★★★ <span>(73)</span></div>
+                    <p class="price">
+                        Rs.1,750
+                        <span class="old-price">Rs.2,000</span>
+                    </p>
+                    <span class="discount">12% OFF</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="product.html" class="product-link">
+            <div class="product-card">
+                <img src="assets/products/product6.jpg" alt="Soft Toy">
+                <div class="product-info">
+                    <h3>Soft Toy</h3>
+                    <div class="rating">★★★★★ <span>(95)</span></div>
+                    <p class="price">
+                        Rs.2,950
+                        <span class="old-price">Rs.4,200</span>
+                    </p>
+                    <span class="discount">30% OFF</span>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<!-- Bottom Navigation -->
+<nav class="bottom-nav">
+
+    <a href="index.html">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="category.html">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Category</span>
+    </a>
+
+    <a href="chat.html">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Chat</span>
+    </a>
+
+    <a href="login.html">
+        <i class="fa-solid fa-user"></i>
+        <span>Account</span>
+    </a>
+
+</nav>
+
+<script src="script.js"></script>
+
+</body>
+</html>
